@@ -21,16 +21,15 @@ class Login extends Component {
               <Form.Label>Password</Form.Label>
               <Form.Control type="password" placeholder="Password" />
             </Form.Group>
-            <Form.Group controlId="formBasicCheckbox">
-              <Form.Check type="checkbox" label="Check me out" />
-            </Form.Group>
-            <Button
-              className="justify-content-center"
-              variant="primary"
-              type="submit"
-            >
-              Submit
-            </Button>
+            <Col className="text-center">
+              <Button
+                onClick={e => e.preventDefault()}
+                variant="primary"
+                type="submit"
+              >
+                Submit
+              </Button>
+            </Col>
           </Form>
         </Col>
       </Row>
