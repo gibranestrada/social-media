@@ -1,30 +1,18 @@
 import React, { Component } from "react";
-import { Form, Row, Col, Button, Nav } from "react-bootstrap";
+import { Form, Row, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-class Signup extends Component {
+class RecoverPassword extends Component {
   render() {
     return (
       <Row className="justify-content-center mt-5">
         <Col xl={3} lg={4} md={5} sm={7}>
           <Form className="border p-4">
-            <h3 className="text-center mb-3">Sign Up</h3>
-            <Form.Group controlId="formSignup">
-              <Form.Label>User Name</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Enter User Name"
-                required
-              />
-            </Form.Group>
+            <h3 className="text-center mb-3">Forgot Password</h3>
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
-              <Form.Text className="text-muted">
-                We'll never share your email with anyone else.
-              </Form.Text>
+              <Form.Control type="email" placeholder="Enter email" required />
             </Form.Group>
-
             <Form.Group controlId="formBasicPassword">
               <Form.Label>Password</Form.Label>
               <Form.Control type="password" placeholder="Password" required />
@@ -44,8 +32,8 @@ class Signup extends Component {
               </Link>
             </Col>
             <Col className="text-center">
-              <Link to={"/recoverpassword"} className="nac-link">
-                Forgot Password?
+              <Link to={"/signup"} className="nac-link">
+                Sign Up
               </Link>
             </Col>
           </Form>
@@ -55,4 +43,4 @@ class Signup extends Component {
   }
 }
 
-export default Signup;
+export default RecoverPassword;

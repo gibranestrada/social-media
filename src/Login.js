@@ -8,7 +8,7 @@ class Login extends Component {
       <Row className="justify-content-center mt-5">
         <Col xl={3} lg={4} md={5} sm={7}>
           <Form className="border p-4">
-            <h2 className="text-center">Login</h2>
+            <h3 className="text-center mb-3">Login</h3>
             <Form.Group controlId="formBasicEmail">
               <Form.Label>User Name</Form.Label>
               <Form.Control
@@ -16,16 +16,12 @@ class Login extends Component {
                 placeholder="Enter User Name"
                 required
               />
-              {/* <Form.Text className="text-muted">
-                We'll never share your email with anyone else.
-              </Form.Text> */}
             </Form.Group>
-
             <Form.Group controlId="formBasicPassword">
               <Form.Label>Password</Form.Label>
               <Form.Control type="password" placeholder="Password" required />
             </Form.Group>
-            <Col className="text-center">
+            <Col className="text-center mb-2">
               <Button
                 onClick={e => e.preventDefault()}
                 variant="primary"
@@ -34,9 +30,14 @@ class Login extends Component {
                 Submit
               </Button>
             </Col>
-            <Col className="text-center mt-2">
-              <Link to={"/signup"} className="nav-link">
-                <Button variant="success">Sign Up</Button>
+            <Col className="text-center">
+              <Link to={"/signup"} className="nac-link">
+                Sign Up
+              </Link>
+            </Col>
+            <Col className="text-center">
+              <Link to={"/recoverpassword"} className="nac-link">
+                Forgot Password?
               </Link>
             </Col>
           </Form>

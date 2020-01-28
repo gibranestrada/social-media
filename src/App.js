@@ -6,6 +6,7 @@ import Login from "./Login.js";
 import Profile from "./Profile.js";
 import Signout from "./Signout.js";
 import Signup from "./Signup.js";
+import RecoverPassword from "./RecoverPassword.js";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
@@ -23,6 +24,7 @@ class App extends Component {
           </Route>
           <Route path="/signout" component={Signout} />
           <Route path="/signup" component={Signup} />
+          <Route path="/recoverpassword" component={RecoverPassword} />
         </Switch>
       </Router>
     );
