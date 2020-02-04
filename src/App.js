@@ -21,9 +21,15 @@ const App = () => {
         <Route path="/profile">
           <Profile />
         </Route>
-        <Route path="/signout" component={Signout} />
-        <Route path="/signup" component={Signup} />
-        <Route path="/recoverpassword" component={RecoverPassword} />
+        <Route path="/signout">
+          <Signout />
+        </Route>
+        <Route path="/signup">
+          <Signup />
+        </Route>
+        <Route path="/recoverpassword">
+          <RecoverPassword />
+        </Route>
       </Switch>
     </Router>
   );

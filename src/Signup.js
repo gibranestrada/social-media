@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Form, Row, Col, Button, Nav } from "react-bootstrap";
+import React from "react";
+import { Form, Row, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const Signup = () => {
